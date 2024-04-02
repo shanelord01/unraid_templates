@@ -12,7 +12,7 @@
   <Overview>Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem. Overseerr helps you find media you want to watch. With inline recommendations and suggestions, you will find yourself deeper and deeper in a rabbit hole of content you never knew you just had to have.</Overview>
   <Category>Downloaders: MediaApp:Video</Category>
   <WebUI>http://[IP]:[PORT:5055]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/overseerr.xml</TemplateURL>
+  <TemplateURL>https://github.com/shanelord01/unraid_templates/blob/main/templates/overseerr.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/sct/overseerr/develop/public/os_logo_filled.png</Icon>
   <ExtraParams/>
   <PostArgs/>
