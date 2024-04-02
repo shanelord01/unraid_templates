@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>NZBGet</Name>
+  <Repository>nzbgetcom/nzbget:latest</Repository>
+  <Registry>https://github.com/nzbgetcom/nzbget</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/nzbgetcom/nzbget/issues</Support>
+  <Project>http://nzbget.com/</Project>
+  <Overview>NZBGet is a binary downloader, which downloads files from Usenet based on information given in nzb-files.&#xD;
+&#xD;
+NZBGet is written in C++ and is known for its performance and efficiency.&#xD;
+&#xD;
+NZBGet can run on almost any device - classic PC, NAS, media player, SAT-receiver, WLAN-router, etc. The download area provides precompiled binaries for Windows, macOS, and Linux. For other platforms the program can be compiled from sources.&#xD;
+&#xD;
+This is a fork of the original NZBGet project formerly maintained by hugbug. The nzbget.com project is an extension of the original, and is maintained in honor of and with respect to its maintainer of many years. We hope to continue where the hugbug left off by providing a useful downloader for the benefit of the Usenet community.&#xD;
+&#xD;
+More information available at https://nzbget.com</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI>http://[IP]:[PORT:6789]/</WebUI>
+  <TemplateURL>https://github.com/shanelord01/unraid_templates/blob/main/templates/nzbgetcom.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/nzbgetcom/nzbget/develop/webui/img/favicon-256x256.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1712100361</DateInstalled>
+  <Requires/>
+  <Config Name="Host Port 1" Target="6789" Default="6789" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">6789</Config>
+  <Config Name="Host Path 2" Target="/data" Default="/mnt/user/data/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/data/</Config>
+  <Config Name="Key 1" Target="UMASK" Default="000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">000</Config>
+  <Config Name="Key 2" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 3" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Australia/Sydney</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/cache/appdata/nzbgetcom" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/nzbgetcom</Config>
+</Container>
