@@ -1,5 +1,9 @@
 # Random unRAID Templates
-These are some unRAID Templates I've put together that use the developer repository rather than a 3rd party
+These are some unRAID Templates I've put together that do one or more of the following:
+
+1. Use the developer repository rather than a 3rd party
+2. Use similar base folders to simplify use (across the *arr packages)
+3. Enable Timezone, NVIDIA and /dev/dri capabilities
 
 Install by putting in your /boot/config/plugins/dockerMan/templates-user/ folder
 
