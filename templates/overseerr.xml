@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Overseerr</Name>
+  <Repository>sctx/overseerr</Repository>
+  <Registry>https://github.com/sct/overseerr</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://docs.overseerr.dev/support/need-help</Support>
+  <Project>https://github.com/sct/overseerr</Project>
+  <Overview>Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem. Overseerr helps you find media you want to watch. With inline recommendations and suggestions, you will find yourself deeper and deeper in a rabbit hole of content you never knew you just had to have.</Overview>
+  <Category>Downloaders: MediaApp:Video</Category>
+  <WebUI>http://[IP]:[PORT:5055]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/overseerr.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/sct/overseerr/develop/public/os_logo_filled.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1712040019</DateInstalled>
+  <Requires/>
+  <Config Name="Host Port 1" Target="5055" Default="5055" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5055</Config>
+  <Config Name="Key 1" Target="UMASK" Default="000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">000</Config>
+  <Config Name="Key 2" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 3" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Australia/Sydney</Config>
+  <Config Name="AppData Config Path" Target="/app/config" Default="/mnt/user/appdata/overseerr" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/overseerr</Config>
+</Container>
