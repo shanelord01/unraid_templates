@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://github.com/shanelord01/unraid_templates/blob/main/templates/overseerr.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Downloaders: MediaApp:Video</Category>
+  <Name>Overseerr</Name>
+  <Description>
+    [b]Description[/b][br]
+    NZBGet is a binary downloader, which downloads files from Usenet based on information given in nzb-files.[br]
+    NZBGet is written in C++ and is known for its performance and efficiency.[br]
+    NZBGet can run on almost any device - classic PC, NAS, media player, SAT-receiver, WLAN-router, etc. The download area provides precompiled binaries for Windows, macOS, and Linux. For other platforms the program can be compiled from sources.[br]
+    This is a fork of the original NZBGet project formerly maintained by hugbug. The nzbget.com project is an extension of the original, and is maintained in honor of and with respect to its maintainer of many years. We hope to continue where the hugbug left off by providing a useful downloader for the benefit of the Usenet community.[br]
+    More information available at https://nzbget.com[br][br]
+    [b]Documentation[/b][br]
+    http://nzbget.com/[br][br]
+  </Description>
+  <Overview>
+    NZBGet com is a binary downloader, which downloads files from Usenet based on information given in nzb-files. This is a fork of the original NZBGet project formerly maintained by hugbug. The nzbget.com project is an extension of the original, and is maintained in honor of and with respect to its maintainer of many years. We hope to continue where the hugbug left off by providing a useful downloader for the benefit of the Usenet community.
+  </Overview>
+  <Support>https://github.com/nzbgetcom/nzbget/issues</Support>
+  <Registry>https://github.com/nzbgetcom/nzbget</Registry>
+  <GitHub>https://github.com/nzbgetcom/nzbget</GitHub>
+  <Repository>nzbgetcom/nzbget:latest</Repository>
+  <Project>https://nzbget.com/</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6789</HostPort>
+        <ContainerPort>6789</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+    <Variable>
+      <Name>TZ</Name>
+      <Value>Australia/Sydney</Value>
+    </Variable>    
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/nzbgetcom</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/data/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:6789]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/nzbgetcom/nzbget/develop/webui/img/favicon-256x256.png</Icon>
+  <DonateText></DonateText>
+  <DonateLink></DonateLink>
+  <DonateImg></DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
