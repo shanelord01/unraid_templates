@@ -33,5 +33,5 @@ More information available at https://nzbget.com</Overview>
   <Config Name="Key 2" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="Key 3" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Australia/Sydney</Config>
-  <Config Name="AppData Config Path" Target="/config" Default="/mnt/cache/appdata/nzbgetcom" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/nzbgetcom</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/nzbgetcom" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/nzbgetcom</Config>
 </Container>
