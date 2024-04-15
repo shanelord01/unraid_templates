@@ -27,15 +27,16 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Host Path 2" Target="/transcode" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Plex-Media-Server/transcode</Config>
-  <Config Name="Host Path 3" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/data/media/</Config>
+  <Config Name="Host Path 2" Target="/transcode" Default="/mnt/user/appdata/Plex-Media-Server/transcode" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Plex-Media-Server/transcode</Config>
+  <Config Name="Host Path 3" Target="/data" Default="/mnt/user/data/media/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/data/media/</Config>
   <Config Name="Key 1" Target="PLEX_CLAIM" Default="Insert Token from https://plex.tv/claim" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Key 2" Target="PLEX_UID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="Key 3" Target="PLEX_GID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
-  <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Australia/Sydney</Config>
+  <Config Name="Key 4" Target="VERSION" Default="latest" Mode="" Description="Set to latest for the public version. Set to beta for the plexpass version" Type="Variable" Display="always" Required="false" Mask="false">beta</Config>
+  <Config Name="Timezone" Target="TZ" Default="Australia/Sydney" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Australia/Sydney</Config>
   <Config Name="NVIDIA 1" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
   <Config Name="NVIDIA 2" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="/dev/dri" Target="" Default="" Mode="" Description="" Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
-  <Config Name="Allowed Networks" Target="ALLOWED_NETWORKS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.0/24</Config>
+  <Config Name="/dev/dri" Target="" Default="/dev/dri" Mode="" Description="Enable access to /dev/dri for Intel GPU etc" Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
+  <Config Name="Allowed Networks" Target="ALLOWED_NETWORKS" Default="192.168.1.0/24" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/Plex-Media-Server" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/Plex-Media-Server</Config>
 </Container>
